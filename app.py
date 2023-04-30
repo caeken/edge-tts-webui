@@ -105,4 +105,4 @@ with gr.Blocks(css="style.css", title="文本转语音") as demo:
             clear.click(fn=clearSpeech, outputs=[text, audio])
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=False, server_name='0.0.0.0')
